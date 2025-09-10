@@ -8,6 +8,7 @@ public class GunShoot : MonoBehaviour
     public float range = 100f;
 
     public Camera fpsCam;
+    public ParticleSystem muzzleFlash;
 
 
     // Update is called once per frame
@@ -17,7 +18,7 @@ public class GunShoot : MonoBehaviour
 
         if (Input.GetButtonDown("Fire1"))
         {
-
+            muzzleFlash.Play();
             Shoot();
 
         }
