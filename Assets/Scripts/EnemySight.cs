@@ -56,7 +56,7 @@ public class EnemySight : MonoBehaviour
 
         if (isInRange == true && isNotHidden == true && isInAngle == true)
         {
-            Debug.Log("player is detected");
+            //Debug.Log("player is detected");
         }
     }
 }
