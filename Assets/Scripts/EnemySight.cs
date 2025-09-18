@@ -13,6 +13,10 @@ public class EnemySight : MonoBehaviour
     [Header("References")]
     public GameObject Player;
 
+    [Header("Look At Settings")]
+    public bool enableLookAt = true;
+    public float lookAtSpeed = 2f; // How fast the enemy rotates to look at player
+
     [Header("Debug")]
     public bool showDebugRays = true;
 
@@ -43,6 +47,7 @@ public class EnemySight : MonoBehaviour
     {
         CheckPlayerDetection();
         UpdateDetectionProgress();
+        HandleLookAtPlayer();
 
         // Debug visualization
         if (showDebugRays)
@@ -135,7 +140,22 @@ public class EnemySight : MonoBehaviour
         // Clamp progress
         detectionProgress = Mathf.Clamp(detectionProgress, 0f, detectionTime);
     }
+    void HandleLookAtPlayer()
+    {
+        if (!enableLookAt || Player == null || !isSpotted) return;
 
+        // Calculate direction to player
+        Vector3 directionToPlayer = (Player.transform.position - transform.position).normalized;
+
+        // Only rotate on Y axis (horizontal rotation)
+        directionToPlayer.y = 0;
+
+        // Calculate target rotation
+        Quaternion targetRotation = Quaternion.LookRotation(directionToPlayer);
+
+        // Smoothly rotate towards player
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lookAtSpeed * Time.deltaTime);
+    }
     void DrawDebugRays()
     {
         // Draw FOV boundaries
