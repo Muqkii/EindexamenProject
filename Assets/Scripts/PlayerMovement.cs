@@ -72,7 +72,7 @@ public class PlayerMovement : MonoBehaviour
             speed = walkSpeed;
             stamina = stamina + 1;
         }
-        Debug.Log(stamina);
+        //Debug.Log(stamina);
 
         if (Input.GetKey(KeyCode.LeftControl))
         {
