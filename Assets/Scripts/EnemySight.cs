@@ -52,6 +52,7 @@ public class EnemySight : MonoBehaviour
         {
             isInAngle = true;
             //Debug.Log("player is in fov");
+
         }
 
         if (isInRange == true && isNotHidden == true && isInAngle == true)
