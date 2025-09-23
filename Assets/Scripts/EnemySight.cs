@@ -140,15 +140,7 @@ public class EnemySight : MonoBehaviour
         // Clamp progress
         detectionProgress = Mathf.Clamp(detectionProgress, 0f, detectionTime);
     }
-        Vector3 side1 = Player.transform.position - transform.position;
-        Vector3 side2 = transform.forward;
-        float angle = Vector3.SignedAngle(side1, side2, Vector3.up);
-        if (angle < DetectionAngle && angle < -1 * DetectionAngle)
-        {
-            isInAngle = true;
-            //Debug.Log("player is in fov");
 
-        }
     void HandleLookAtPlayer()
     {
         if (!enableLookAt || Player == null || !isSpotted) return;
