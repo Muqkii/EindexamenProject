@@ -6,16 +6,22 @@ public class EnemySight : MonoBehaviour
 {
     [Header("Detection Settings")]
     public float DetectionRange = 10f;
-    public float DetectionAngle = 60f; // Total FOV (30 degrees each side)
+    public float DetectionAngle = 60f;
     public Vector3 Offset = Vector3.zero;
-    public float detectionTime = 2f; // Time in seconds to fully detect
+    public float detectionTime = 2f; 
 
     [Header("References")]
     public GameObject Player;
 
     [Header("Look At Settings")]
     public bool enableLookAt = true;
-    public float lookAtSpeed = 2f; // How fast the enemy rotates to look at player
+    public float lookAtSpeed = 2f;
+
+    [Header("Gun Settings")]
+    public float shootingRange = 20f;
+    public float fireRate = 1f;
+    public int damage = 10;
+    public Transform firePoint;
 
     [Header("Debug")]
     public bool showDebugRays = true;
@@ -30,16 +36,32 @@ public class EnemySight : MonoBehaviour
     private float detectionProgress = 0f;
     private bool isDetecting = false;
 
-    // Events (optioneel - voor andere scripts)
-    public System.Action OnPlayerSpotted;
-    public System.Action OnPlayerLost;
+    // Enemy Fire
+    private Transform playerPos;
+    private float nextFireTime;
 
     void Start()
     {
-        // Auto-find player if not assigned
+
         if (Player == null)
         {
             Player = GameObject.FindGameObjectWithTag("Player");
+        }
+
+        GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
+
+        if (playerObject != null)
+        {
+            playerPos = playerObject.transform;
+        }
+        else
+        {
+            Debug.LogWarning("Geen player gevonden");
+        }
+
+        if (firePoint == null)
+        {
+            firePoint = transform;
         }
     }
 
@@ -49,7 +71,11 @@ public class EnemySight : MonoBehaviour
         UpdateDetectionProgress();
         HandleLookAtPlayer();
 
-        // Debug visualization
+        if (isSpotted && CanShoot())
+        {
+            Shoot();
+        }
+
         if (showDebugRays)
         {
             DrawDebugRays();
@@ -77,10 +103,9 @@ public class EnemySight : MonoBehaviour
         Vector3 directionToPlayer = (Player.transform.position - transform.position).normalized;
         float angle = Vector3.Angle(transform.forward, directionToPlayer);
 
-        if (angle <= DetectionAngle * 0.5f) // Half angle because Angle gives absolute value
+        if (angle <= DetectionAngle * 0.5f)
         {
             isInAngle = true;
-            //Debug.Log("Player is in fov");
         }
 
         // Check if player is not hidden (raycast)
@@ -93,7 +118,6 @@ public class EnemySight : MonoBehaviour
             if (hit.transform == Player.transform)
             {
                 isNotHidden = true;
-                //Debug.Log("Player is not hidden");
             }
         }
     }
@@ -114,7 +138,6 @@ public class EnemySight : MonoBehaviour
             if (detectionProgress >= detectionTime)
             {
                 isSpotted = true;
-                OnPlayerSpotted?.Invoke();
                 Debug.Log("Player spotted!");
             }
         }
@@ -131,7 +154,6 @@ public class EnemySight : MonoBehaviour
                 if (isSpotted)
                 {
                     isSpotted = false;
-                    OnPlayerLost?.Invoke();
                     Debug.Log("Player lost!");
                 }
             }
@@ -155,6 +177,36 @@ public class EnemySight : MonoBehaviour
 
         // Smoothly rotate towards player
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, lookAtSpeed * Time.deltaTime);
+    }
+    bool CanShoot()
+    {
+        return Time.time >= nextFireTime;
+    }
+
+    void Shoot()
+    {
+        nextFireTime = Time.time + (1f / fireRate);
+
+        Vector3 rayOrigin = transform.position;
+        Vector3 rayDirection = Player.transform.position - rayOrigin + Offset;
+
+        RaycastHit hit;
+        if (Physics.Raycast(rayOrigin, rayDirection.normalized, out hit, DetectionRange))
+        {
+            if (hit.transform.CompareTag("Player"))
+            {
+                //health playerHealth = hit.transform.GetComponent<health>();
+                var playerStats = GameObject.Find("First Person Player").GetComponent<PlayerStats>();
+                if (playerStats != null)
+                {
+                    playerStats.TakeDamage(damage);
+                }
+                else
+                {
+                    Debug.Log("Speler geraakt! Geen PlayerHealth component gevonden.");
+                }
+            }
+        }
     }
     void DrawDebugRays()
     {
