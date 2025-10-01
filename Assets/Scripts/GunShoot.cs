@@ -43,6 +43,12 @@ public class GunShoot : MonoBehaviour
             StartCoroutine(reload());
             return;
         }
+        if (Input.GetKey(KeyCode.R)) 
+        {
+            StartCoroutine(reload());
+            return;
+
+        }
 
         if (Input.GetButton("Fire1")&& Time.time >= nextTimeToFire)
         {
