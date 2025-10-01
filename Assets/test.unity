@@ -51691,6 +51691,7 @@ GameObject:
   - component: {fileID: 1474410581}
   - component: {fileID: 1474410580}
   - component: {fileID: 1474410583}
+  - component: {fileID: 1474410584}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -51803,9 +51804,33 @@ MonoBehaviour:
   damage: 10
   range: 100
   fireRate: 15
+  maxAmmo: 15
+  reloadTime: 1
   fpsCam: {fileID: 2087881146}
   muzzleFlash: {fileID: 1198736354}
   impactEffect: {fileID: 944925575}
+  animator: {fileID: 1474410584}
+--- !u!95 &1474410584
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474410578}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 036cf379262450e44a6c2608bfba1f71, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1001 &1476603268
 PrefabInstance:
   m_ObjectHideFlags: 0
