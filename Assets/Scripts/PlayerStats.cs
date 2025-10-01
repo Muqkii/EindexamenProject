@@ -4,5 +4,27 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public int health = 100;
+    [Header("Health Settings")]
+    public int maxHealth = 200;   // maximum possible health
+    public int health = 100;      // starting health
+
+    void Start()
+    {
+        // Ensure health never goes above maxHealth
+        health = Mathf.Clamp(health, 0, maxHealth);
+    }
+
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        health = Mathf.Clamp(health, 0, maxHealth);
+        Debug.Log("Player Health: " + health);
+    }
+
+    public void Heal(int amount)
+    {
+        health += amount;
+        health = Mathf.Clamp(health, 0, maxHealth);
+        Debug.Log("Player Healed. Current Health: " + health);
+    }
 }

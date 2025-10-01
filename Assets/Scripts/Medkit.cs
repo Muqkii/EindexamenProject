@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Medkit : MonoBehaviour
@@ -15,19 +14,9 @@ public class Medkit : MonoBehaviour
             var playerStats = other.gameObject.GetComponent<PlayerStats>();
             if (playerStats != null)
             {
-                playerStats.health = healthAdder(playerStats.health);
+                playerStats.Heal(healthGain); // use PlayerStats' Heal method
                 Destroy(gameObject);
             }
         }
-    }
-
-    int healthAdder(int health)
-    {
-        health += healthGain;
-        if (health > 100)
-        {
-            health = 100;
-        }
-        return (health);
     }
 }
