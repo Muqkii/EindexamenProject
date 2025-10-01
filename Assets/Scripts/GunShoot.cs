@@ -1,6 +1,7 @@
 
 using UnityEngine;
 using System.Collections;
+using TMPro;
 
 public class GunShoot : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class GunShoot : MonoBehaviour
     public float fireRate = 15f;
     private int currentAmmo= 15;
     public int maxAmmo = 15;
+    public int ammoReserve = 115;
     public float reloadTime= 1f;
     private bool isReloading= false;
 
@@ -20,6 +22,8 @@ public class GunShoot : MonoBehaviour
     public Animator animator;
 
     private float nextTimeToFire = 0f;
+
+    public TextMeshProUGUI ammoText;
     private void Start()
     {
         currentAmmo = maxAmmo;
@@ -28,9 +32,11 @@ public class GunShoot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
+
         if (isReloading)
             return;
-
+        ammoText.text = currentAmmo + " / " + ammoReserve;
         RaycastHit hit;
         if( currentAmmo <=0)
         {
@@ -50,6 +56,11 @@ public class GunShoot : MonoBehaviour
      
     IEnumerator  reload() 
     {
+        if (ammoReserve <= 0 || currentAmmo == maxAmmo)
+        {
+            yield break; // stopt de coroutine meteen
+        }
+
         isReloading = true;
         Debug.Log("reloading...");
 
@@ -57,12 +68,24 @@ public class GunShoot : MonoBehaviour
 
         yield return new WaitForSeconds(reloadTime-.25f);
 
+        
+
         animator.SetBool("Reloading", false);
         yield return new WaitForSeconds(.25f);
 
+        // Hoeveel kogels ontbreken?
+        int ammoNeeded = maxAmmo - currentAmmo;
 
+        // Check hoeveel er nog in de reserve zit
+        int ammoToReload = Mathf.Min(ammoNeeded, ammoReserve);
 
-        currentAmmo = maxAmmo;
+        // Trek dat van de reserve af
+        ammoReserve -= ammoToReload;
+
+        // Vul het magazijn aan
+        currentAmmo += ammoToReload;
+
+        //currentAmmo = maxAmmo;
         isReloading=false;
     }
 
