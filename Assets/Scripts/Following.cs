@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor.ShaderGraph.Serialization;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Following : MonoBehaviour
 {
@@ -21,6 +22,7 @@ public class Following : MonoBehaviour
         if (closeToPlayer && !isShooting && cageDoorOpen)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
+            transform.LookAt(player.transform.position);
         }
         //pogo mode
         //transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed);

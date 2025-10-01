@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SafePointScript : MonoBehaviour
 {
@@ -17,8 +18,8 @@ public class SafePointScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && hostagesSaved)
         {
-            //check if player has all hostages
-            //if yes, go to next scene
+            SceneManager.LoadScene(1);
+            Debug.Log("change");
         }
     }
 }
