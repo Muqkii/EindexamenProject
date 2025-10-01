@@ -11,7 +11,7 @@ public class PlayerUI : MonoBehaviour
 
     [Header("UI Elements")]
     public TMP_Text healthText;       // drag the HealthText UI object here
-    public TMP_Text ammoText;         // drag the AmmoText UI object here
+   // public TMP_Text ammoText;         // drag the AmmoText UI object here
 
     void Update()
     {
@@ -19,6 +19,6 @@ public class PlayerUI : MonoBehaviour
         healthText.text = "Health: " + playerStats.health.ToString();
 
         // Update Ammo
-        ammoText.text = "" + gun.currentAmmo + " / " + gun.reserveAmmo;
+       // ammoText.text = "" + gun.currentAmmo + " / " + gun.reserveAmmo;
     }
 }
