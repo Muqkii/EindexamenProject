@@ -6,13 +6,16 @@ using UnityEngine;
 public class CageDoorScript : MonoBehaviour
 {
     public Animator animator;
-    private bool inDoorRange;
+    public bool doorOpen;
+
+    private bool inDoorRange = true;
 
     void Update()
     {
         if (inDoorRange && Input.GetKeyDown(KeyCode.E))
         {
             animator.Play("DoorOpeningAnimation", 0, 0f);
+            doorOpen = true;
         }
     }
 

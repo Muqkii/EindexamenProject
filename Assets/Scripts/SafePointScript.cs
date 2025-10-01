@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class SafePointScript : MonoBehaviour
 {
+    public GameObject Deur;
 
-    void Start()
-    {
-        
-    }
+    private bool hostagesSaved;
 
     void Update()
     {
-        
+        hostagesSaved = Deur.GetComponentInChildren<CageDoorScript>().doorOpen;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("Player") && hostagesSaved)
         {
             //check if player has all hostages
             //if yes, go to next scene

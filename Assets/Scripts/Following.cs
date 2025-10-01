@@ -7,15 +7,18 @@ using UnityEngine;
 public class Following : MonoBehaviour
 {
     public GameObject player;
+    public GameObject CageDoor;
     public float speed = 1f;
 
     private bool closeToPlayer = true;
     private bool isShooting;
+    private bool cageDoorOpen = false;
 
     void Update()
     {
+        cageDoorOpen = CageDoor.GetComponentInChildren<CageDoorScript>().doorOpen; //check if cage is open
         FakeShooting();
-        if (closeToPlayer && !isShooting)
+        if (closeToPlayer && !isShooting && cageDoorOpen)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
         }
