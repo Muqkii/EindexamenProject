@@ -12,6 +12,8 @@ public class GunShoot : MonoBehaviour
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
 
+    public bool shooting;
+
     private float nextTimeToFire = 0f;
 
 
@@ -25,7 +27,12 @@ public class GunShoot : MonoBehaviour
 
            nextTimeToFire = Time.time + 1f/ fireRate;
             Shoot();
-
+            Debug.Log("shooting");
+            shooting = true;
+        }
+        else
+        {
+            shooting = false;
         }
         
     }
