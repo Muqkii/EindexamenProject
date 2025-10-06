@@ -50111,7 +50111,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 562.8, y: -200}
+  m_AnchoredPosition: {x: 351.9, y: -161.6}
   m_SizeDelta: {x: 229.08, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1425911033
@@ -50143,8 +50143,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -51827,6 +51827,7 @@ GameObject:
   - component: {fileID: 1474410580}
   - component: {fileID: 1474410583}
   - component: {fileID: 1474410584}
+  - component: {fileID: 1474410585}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -51968,6 +51969,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1474410585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474410578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d0160463658e9245b2a355dd6547177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultLocalPosition: {x: 0.292, y: -0.419, z: 1.055}
 --- !u!1001 &1476603268
 PrefabInstance:
   m_ObjectHideFlags: 0
