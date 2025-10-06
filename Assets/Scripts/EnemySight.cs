@@ -30,7 +30,7 @@ public class EnemySight : MonoBehaviour
     private bool isInAngle;
     private bool isInRange;
     private bool isNotHidden;
-    private bool isSpotted;
+    public bool isSpotted;
 
     // Detection progress
     private float detectionProgress = 0f;
@@ -39,6 +39,7 @@ public class EnemySight : MonoBehaviour
     // Enemy Fire
     private Transform playerPos;
     private float nextFireTime;
+    public bool isInFirerange;
 
     void Start()
     {
@@ -180,7 +181,20 @@ public class EnemySight : MonoBehaviour
     }
     bool CanShoot()
     {
-        return Time.time >= nextFireTime;
+        Vector3 rayOrigin = transform.position;
+        Vector3 rayDirection = Player.transform.position - rayOrigin + Offset;
+
+        RaycastHit hit;
+        if (Physics.Raycast(rayOrigin, rayDirection.normalized, out hit, shootingRange))
+        {
+            return Time.time >= nextFireTime;
+            isInFirerange = true;
+        }
+        else
+        {
+            return false;
+            isInFirerange = false;
+        } 
     }
 
     void Shoot()
@@ -191,7 +205,7 @@ public class EnemySight : MonoBehaviour
         Vector3 rayDirection = Player.transform.position - rayOrigin + Offset;
 
         RaycastHit hit;
-        if (Physics.Raycast(rayOrigin, rayDirection.normalized, out hit, DetectionRange))
+        if (Physics.Raycast(rayOrigin, rayDirection.normalized, out hit, shootingRange))
         {
             if (hit.transform.CompareTag("Player"))
             {

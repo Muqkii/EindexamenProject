@@ -397,7 +397,7 @@ GameObject:
   m_Component:
   - component: {fileID: 401571861}
   - component: {fileID: 401571862}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Point Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -649,7 +649,7 @@ GameObject:
   - component: {fileID: 568858183}
   - component: {fileID: 568858184}
   - component: {fileID: 568858185}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: First Person Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -759,6 +759,67 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+--- !u!1 &653988675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 653988676}
+  - component: {fileID: 653988677}
+  m_Layer: 8
+  m_Name: NavMesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &653988676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653988675}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.95, y: 6.5, z: 19.822851}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &653988677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653988675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.16666667
+  m_BuildHeightMesh: 0
+  m_NavMeshData: {fileID: 23800000, guid: ef1bfb1b06680634789b700b9f5c2bec, type: 2}
 --- !u!1 &788668468
 GameObject:
   m_ObjectHideFlags: 0
@@ -768,7 +829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 788668469}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -795,27 +856,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1000010355441670, guid: 02a509a7fa70ed740ba4197e20c5d32d, type: 3}
   m_PrefabInstance: {fileID: 528932847}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1077875139 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7001748552466941689, guid: 87eb7d0d1c0e58b4183d8ac2b343c95c, type: 3}
-  m_PrefabInstance: {fileID: 1206930358491522731}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1077875148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077875139}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f232d2422f5a83498086776326bf3c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shootingRange: 1000
-  fireRate: 25
-  damage: 10
-  firePoint: {fileID: 0}
 --- !u!1 &1198736351
 GameObject:
   m_ObjectHideFlags: 0
@@ -827,7 +867,7 @@ GameObject:
   - component: {fileID: 1198736352}
   - component: {fileID: 1198736354}
   - component: {fileID: 1198736353}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5717,7 +5757,7 @@ GameObject:
   - component: {fileID: 1257185970}
   - component: {fileID: 1257185969}
   - component: {fileID: 1257185968}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5893,7 +5933,7 @@ GameObject:
   - component: {fileID: 1474410581}
   - component: {fileID: 1474410580}
   - component: {fileID: 1474410583}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6340,7 +6380,7 @@ GameObject:
   - component: {fileID: 2087881146}
   - component: {fileID: 2087881145}
   - component: {fileID: 2087881147}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6488,14 +6528,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5805346587054753583, guid: 87eb7d0d1c0e58b4183d8ac2b343c95c, type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 5805346587054753583, guid: 87eb7d0d1c0e58b4183d8ac2b343c95c, type: 3}
-      propertyPath: thePath
+    - target: {fileID: 4899303495093017089, guid: 87eb7d0d1c0e58b4183d8ac2b343c95c, type: 3}
+      propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 568858182}
     - target: {fileID: 7001748552466941689, guid: 87eb7d0d1c0e58b4183d8ac2b343c95c, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -6503,10 +6539,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7001748552466941689, guid: 87eb7d0d1c0e58b4183d8ac2b343c95c, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1077875148}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 87eb7d0d1c0e58b4183d8ac2b343c95c, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -6522,3 +6555,4 @@ SceneRoots:
   - {fileID: 38384907}
   - {fileID: 528932847}
   - {fileID: 239475706}
+  - {fileID: 653988676}
