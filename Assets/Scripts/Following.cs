@@ -10,16 +10,16 @@ public class Following : MonoBehaviour
     public GameObject player;
     public GameObject CageDoor;
     public float speed = 1f;
+    public bool closeToPlayer;
 
-    private bool closeToPlayer = true;
     private bool isShooting;
-    private bool cageDoorOpen = false;
+    public bool cageDoorOpen = false;
 
     void Update()
     {
         cageDoorOpen = CageDoor.GetComponentInChildren<CageDoorScript>().doorOpen; //check if cage is open
         FakeShooting();
-        if (closeToPlayer && !isShooting && cageDoorOpen)
+        if (!closeToPlayer && !isShooting && cageDoorOpen)
         {
             transform.position = Vector3.MoveTowards(transform.position, player.transform.position, speed * Time.deltaTime);
             transform.LookAt(player.transform.position);
@@ -44,7 +44,7 @@ public class Following : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            closeToPlayer = false;
+            closeToPlayer = true;
         }
     }
 
@@ -52,7 +52,7 @@ public class Following : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            closeToPlayer = true;
+            closeToPlayer = false;
         }
     }
 }
