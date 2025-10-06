@@ -13,6 +13,13 @@ public class PlayerStats : MonoBehaviour
         // Ensure health never goes above maxHealth
         health = Mathf.Clamp(health, 0, maxHealth);
     }
+    private void Update()
+    {
+        if(health <= 0)
+        {
+            //death
+        }
+    }
 
     public void TakeDamage(int damage)
     {
@@ -28,3 +35,4 @@ public class PlayerStats : MonoBehaviour
         Debug.Log("Player Healed. Current Health: " + health);
     }
 }
+
