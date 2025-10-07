@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SafePointScript : MonoBehaviour
 {
     public GameObject Deur;
+    public int sceneToSwitchTo;
 
     private bool hostagesSaved;
 
@@ -18,7 +19,7 @@ public class SafePointScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && hostagesSaved)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(sceneToSwitchTo);
             Debug.Log("change");
         }
     }
