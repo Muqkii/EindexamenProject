@@ -624,6 +624,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 264838400}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.3495079
@@ -679,6 +687,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3074,6 +3086,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -3245,6 +3269,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: Cylinder Variant (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -5751,6 +5787,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -8078,6 +8126,10 @@ PrefabInstance:
     - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_Name
       value: red box (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
@@ -10768,6 +10820,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 264838400}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.7974553
@@ -10823,6 +10883,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -15923,6 +15987,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -16336,6 +16412,10 @@ PrefabInstance:
     - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_Name
       value: blue box (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
@@ -17457,6 +17537,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: green box (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -18264,6 +18348,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 264838400}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.6105363
@@ -18319,6 +18411,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20471,6 +20567,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: wood pile (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -23203,6 +23311,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 264838400}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8951206
@@ -23258,6 +23374,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26824,6 +26944,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -27520,6 +27652,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -27639,6 +27783,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: Cylinder Variant (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -29282,6 +29438,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 6.8836203
@@ -29337,6 +29501,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -35573,6 +35741,10 @@ PrefabInstance:
       value: -0.34
       objectReference: {fileID: 0}
     - target: {fileID: 1563121578774431758, guid: d005bc5a96cbe9843a4420b3954a07ae, type: 3}
+      propertyPath: ammoText
+      value: 
+      objectReference: {fileID: 1425911033}
+    - target: {fileID: 1563121578774431758, guid: d005bc5a96cbe9843a4420b3954a07ae, type: 3}
       propertyPath: impactEffect
       value: 
       objectReference: {fileID: 944925575}
@@ -36289,6 +36461,10 @@ PrefabInstance:
     - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_Name
       value: blue box (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
@@ -37470,6 +37646,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 264838400}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.4579712
@@ -37525,6 +37709,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -38258,6 +38446,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -38399,6 +38599,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: wood pile (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -39025,6 +39237,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 264838400}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 1.1550373
@@ -39080,6 +39300,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39316,6 +39540,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: Cylinder Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -40048,6 +40284,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: Cylinder Variant (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -42459,6 +42707,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: blue box (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.910788
@@ -43659,9 +43911,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -1791376659745925407, guid: 6fe3784b6fa1f4841a127220269aaf6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 82125259306800719, guid: 6fe3784b6fa1f4841a127220269aaf6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 6fe3784b6fa1f4841a127220269aaf6f, type: 3}
       propertyPath: m_Name
       value: Plant_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6fe3784b6fa1f4841a127220269aaf6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1726112016567215398, guid: 6fe3784b6fa1f4841a127220269aaf6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2098837259658554736, guid: 6fe3784b6fa1f4841a127220269aaf6f, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -45074,6 +45342,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: Cylinder Variant (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -50215,6 +50495,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 264838400}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 3.4554489
@@ -50270,6 +50558,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50393,6 +50685,10 @@ PrefabInstance:
     - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_Name
       value: red box (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
@@ -51791,6 +52087,10 @@ PrefabInstance:
     - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_Name
       value: red box (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
@@ -56994,6 +57294,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -57135,6 +57447,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: Cylinder Variant (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -62185,6 +62509,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: red box (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.6
@@ -62538,6 +62866,10 @@ PrefabInstance:
     - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_Name
       value: zwart box (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
@@ -65811,6 +66143,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -66091,6 +66435,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 264838400}
     m_Modifications:
+    - target: {fileID: 201620436069759154, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3559844359691677926, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7370120123465932607, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.8462116
@@ -66146,6 +66498,10 @@ PrefabInstance:
     - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
       propertyPath: m_Name
       value: Rock_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857723176079672709, guid: c8a2815ff94c8cf4c817008d9af097ad, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -71019,6 +71375,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder Variant (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -71160,6 +71528,18 @@ PrefabInstance:
     - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_Name
       value: wood pile
+      objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalScale.x
@@ -71461,6 +71841,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cylinder
       objectReference: {fileID: 0}
+    - target: {fileID: 410635613263874311, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 647406581958592881, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725675473334790266, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 9166479582927891270, guid: c9303e67c3e65284d927e6959482aa6f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -72.6
@@ -71520,6 +71912,10 @@ PrefabInstance:
     - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_Name
       value: blue box
+      objectReference: {fileID: 0}
+    - target: {fileID: 5086477288072397343, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5610672083145431205, guid: 5d40517bf72dfc640a0dc0fc6e0b9186, type: 3}
       propertyPath: m_LocalScale.x
