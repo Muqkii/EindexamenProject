@@ -66,6 +66,9 @@ public class GunShooting1 : MonoBehaviour
     {
         if (!cam) return;
 
+        if (PauseMenu1.isPaused)
+            return;
+
         // manual reload
         if (!isReloading && Input.GetKeyDown(KeyCode.R) && currentAmmo < maxAmmo && reserveAmmo > 0)
         {

@@ -40,5 +40,12 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit Game pressed");
         Application.Quit();
     }
+
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1.0f;
+        SceneManager.LoadScene("MainMenuScene");
+
+    }
 }
 
