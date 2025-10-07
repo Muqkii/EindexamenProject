@@ -40,5 +40,7 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Quit Game pressed");
         Application.Quit();
     }
+
+   
 }
 
