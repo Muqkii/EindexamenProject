@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class GunShooting1 : MonoBehaviour
 {
@@ -32,6 +33,9 @@ public class GunShooting1 : MonoBehaviour
     public float kickZ = 0.06f;            // backward kick each shot
     public float recoilReturn = 0.08f;     // return speed
 
+    [Header("UI")]
+    public TextMeshProUGUI ammoText;
+
     // --- internals ---
     float nextFireTime;
     bool isReloading;
@@ -55,6 +59,7 @@ public class GunShooting1 : MonoBehaviour
         if (!muzzle) muzzle = transform;
         smoothedOffset = restOffset;       // start at hip/rest
         cam.fieldOfView = fovNormal;
+        UpdateAmmoUI();
     }
 
     void Update()
@@ -142,6 +147,7 @@ public class GunShooting1 : MonoBehaviour
 
         // visual recoil kick (viewmodel only)
         currentKickZ += kickZ;
+        UpdateAmmoUI();
     }
 
     IEnumerator Reload()
@@ -157,6 +163,13 @@ public class GunShooting1 : MonoBehaviour
         reserveAmmo -= toLoad;
 
         isReloading = false;
+        UpdateAmmoUI();
+    }
+
+    void UpdateAmmoUI()
+    {
+        if (ammoText != null)
+            ammoText.text = $"{currentAmmo} / {reserveAmmo}";
     }
 }
 
