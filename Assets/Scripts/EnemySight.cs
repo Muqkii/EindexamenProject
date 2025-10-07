@@ -210,7 +210,7 @@ public class EnemySight : MonoBehaviour
             if (hit.transform.CompareTag("Player"))
             {
                 //health playerHealth = hit.transform.GetComponent<health>();
-                var playerStats = GameObject.Find("First Person Player").GetComponent<PlayerStats>();
+                var playerStats = GameObject.Find("New Player").GetComponent<PlayerStats>();
                 if (playerStats != null)
                 {
                     playerStats.TakeDamage(damage);
