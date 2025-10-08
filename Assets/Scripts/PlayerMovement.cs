@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         float x = Input.GetAxis("Horizontal");
         float z= Input.GetAxis("Vertical");
         
-        if (Input.GetKey(KeyCode.LeftShift) && stamina > 0)
+        if (Input.GetKey(KeyCode.LeftShift) && stamina > 0&& isGrounded)
         {
             sprinting = true;
         }
