@@ -36665,11 +36665,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1764362614565380268, guid: d005bc5a96cbe9843a4420b3954a07ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.21
+      value: -0.04
       objectReference: {fileID: 0}
     - target: {fileID: 1764362614565380268, guid: d005bc5a96cbe9843a4420b3954a07ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.36
+      value: -0.06
       objectReference: {fileID: 0}
     - target: {fileID: 1906525649265572315, guid: d005bc5a96cbe9843a4420b3954a07ae, type: 3}
       propertyPath: m_Layer
@@ -36713,7 +36713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2883892283488485307, guid: d005bc5a96cbe9843a4420b3954a07ae, type: 3}
       propertyPath: mouseSensitivity
-      value: 250
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 3175039810003863948, guid: d005bc5a96cbe9843a4420b3954a07ae, type: 3}
       propertyPath: m_Layer
@@ -42654,7 +42654,7 @@ PrefabInstance:
       objectReference: {fileID: 231657400}
     - target: {fileID: 6259983082500157340, guid: 1c57441e666eb5a4e90e75a8dbce1812, type: 3}
       propertyPath: sceneToSwitchTo
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8554095194997412516, guid: 1c57441e666eb5a4e90e75a8dbce1812, type: 3}
       propertyPath: m_LocalPosition.x
@@ -73911,7 +73911,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6731826732775619053, guid: 879a4ebf50ce94643934a0a264f5fdf6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.19
+      value: 0.44
       objectReference: {fileID: 0}
     - target: {fileID: 6731826732775619053, guid: 879a4ebf50ce94643934a0a264f5fdf6, type: 3}
       propertyPath: m_LocalPosition.z
