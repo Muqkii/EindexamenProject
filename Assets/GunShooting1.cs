@@ -36,6 +36,8 @@ public class GunShooting1 : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI ammoText;
 
+ 
+
     // --- internals ---
     float nextFireTime;
     bool isReloading;
