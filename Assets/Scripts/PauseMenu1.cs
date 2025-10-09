@@ -40,14 +40,14 @@ public class PauseMenu1 : MonoBehaviour
     }
 
    public void PauseGame() 
-    { 
-       pauseMenu.SetActive(true);
+   { 
+        pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPaused = true;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
-    }
+   }
 
     public void ResumeGame() 
     { 
