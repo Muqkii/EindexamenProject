@@ -20,7 +20,7 @@ public class GunShooting1 : MonoBehaviour
     public int maxAmmo = 30;               // bullets per magazine
     public int currentAmmo = 30;           // current bullets in mag
     public int reserveAmmo = 90;           // spare bullets
-    public float reloadTime = 2f;
+    public float reloadTime = 1f;
 
     [Header("Aiming (viewmodel placement)")]
     public Vector3 restOffset = new Vector3(0.2f, -0.2f, 0.4f);   // local offset in camera space
@@ -36,6 +36,10 @@ public class GunShooting1 : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI ammoText;
 
+    
+    public AudioSource audioSource;
+    public AudioClip shootClip;
+   
     // --- internals ---
     float nextFireTime;
     bool isReloading;
@@ -45,6 +49,9 @@ public class GunShooting1 : MonoBehaviour
     float fovVel;                          // SmoothDamp helper for FOV
     float currentKickZ;
     float kickVel;                         // SmoothDamp helper for recoil
+    float nextDryTime;                     // rate-limit dry click
+
+
 
     void Reset()
     {
@@ -117,6 +124,13 @@ public class GunShooting1 : MonoBehaviour
         // ALWAYS AUTOMATIC: hold Fire1 to shoot
         bool wantsToShoot = Input.GetButton("Fire1");
         if (!wantsToShoot) return;
+
+        // Dry click if totally out
+        if (currentAmmo <= 0 && reserveAmmo <= 0)
+        {
+            
+        }
+
         if (Time.time < nextFireTime) return;
         if (currentAmmo <= 0) return;
 
@@ -130,6 +144,13 @@ public class GunShooting1 : MonoBehaviour
 
         // VFX
         if (muzzleFlash) muzzleFlash.Play();
+
+        // SFX
+        if (shootClip && audioSource)
+        {
+            audioSource.PlayOneShot(shootClip);
+           
+        }
 
         // raycast from camera for precise hits
         Ray ray = new Ray(cam.transform.position, cam.transform.forward);
@@ -174,5 +195,12 @@ public class GunShooting1 : MonoBehaviour
         if (ammoText != null)
             ammoText.text = $"{currentAmmo} / {reserveAmmo}";
     }
+
+    void PlayOneShot(AudioClip clip, float volume = 1f)
+    {
+        if (clip == null || audioSource == null) return;
+        audioSource.PlayOneShot(clip, Mathf.Clamp01(volume));
+    }
 }
+
 
